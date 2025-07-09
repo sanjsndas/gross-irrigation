@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Irrigation — The Flow That Grows</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles and font application */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333; /* Default text color */
+        }
+        /* Brand Colors */
+        .bg-primary-green { background-color: #388E3C; }
+        .text-primary-green { color: #388E3C; }
+        .bg-accent-blue { background-color: #29B6F6; }
+        .text-accent-blue { color: #29B6F6; }
+        .bg-tertiary-brown { background-color: #5D4037; }
+        .text-tertiary-brown { color: #5D4037; }
+
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hero video overlay */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 10;
+        }
+
+        /* Ensure video covers the hero section */
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 5;
+            object-fit: cover; /* Ensures video covers the area */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-primary-green text-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold rounded-md p-2 hover:bg-green-800 transition-colors">💧 Gross Irrigation</a>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-lg">
+                    <li><a href="index.html" class="hover:text-accent-blue transition-colors rounded-md p-2 hover:bg-green-800">Home</a></li>
+                    <li><a href="privacy.html" class="hover:text-accent-blue transition-colors rounded-md p-2 hover:bg-green-800">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-accent-blue transition-colors rounded-md p-2 hover:bg-green-800">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-accent-blue transition-colors rounded-md p-2 hover:bg-green-800">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-blue transition-colors rounded-md p-2 hover:bg-green-800">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <!-- Placeholder for Hero Video - using an image as video is not directly embeddable in this format -->
+        <div class="hero-overlay">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 animate-pulse">“The Flow That Grows.”</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl leading-relaxed">
+                Gross Irrigation is your partner in creating thriving green spaces with unparalleled water efficiency and smart automation.
+                We bring future-ready solutions to modern homes, vibrant rooftop farms, charming balcony gardens, and expansive landscape projects,
+                ensuring every drop counts towards a healthier, more sustainable environment.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contact" class="bg-accent-blue hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all transform hover:scale-105">
+                    💧 Book Your Free Water Audit
+                </a>
+                <a href="#what-we-offer" class="bg-tertiary-brown hover:bg-amber-800 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all transform hover:scale-105">
+                    🌱 Explore Smart Irrigation Kits
+                </a>
+                <a href="#contact" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all transform hover:scale-105">
+                    📲 Check My Garden's Compatibility
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer Section - Updated to Card View -->
+    <section id="what-we-offer" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-12 text-primary-green">What We Offer: Solutions for Every Green Space</h2>
+            <p class="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+                At Gross Irrigation, our expertise spans across a comprehensive suite of services designed to optimize your garden's health and minimize water consumption. From initial consultation and custom design to seamless installation and ongoing maintenance, we provide end-to-end solutions that blend cutting-edge technology with ecological responsibility. Discover how our tailored approaches can transform your green space into a vibrant, water-efficient oasis.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Drip & Sprinkler Installations Card -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">🛠️</div>
+                    <h3 class="text-3xl font-semibold text-tertiary-brown mb-4">Drip & Sprinkler Installations</h3>
+                    <img src="p1.webp" alt="Drip Irrigation System" class="rounded-lg shadow-md mb-4 w-full h-auto">
+                    <p class="text-gray-700 leading-relaxed">
+                        Our core offering revolves around the meticulous design and installation of state-of-the-art drip and sprinkler systems. We understand that every garden is unique, which is why we provide solutions compatible with a diverse range of environments, including sprawling lawns, serene terrace gardens, innovative vertical walls, and charming balcony setups. Our approach begins with a thorough analysis of your soil type, ensuring that the irrigation plan is perfectly tailored to the specific needs of your plants and the composition of your land. This soil-type-based planning prevents overwatering in clay soils and ensures adequate hydration in sandy soils, leading to healthier root development and more vibrant foliage. Beyond basic installation, we integrate advanced app-controlled timers and sophisticated zone systems. This means you have complete command over your irrigation from the palm of your hand, whether you're at home or away. Our multi-zone systems allow for precise watering schedules based on plant type, sun exposure, and soil moisture levels, ensuring that each area of your garden receives exactly what it needs, when it needs it. This level of control not only promotes optimal plant health but also dramatically reduces water waste, making your garden both beautiful and eco-friendly. Our technicians are highly trained in the latest installation techniques, ensuring a seamless and efficient setup with minimal disruption to your existing landscape. We use only high-quality, durable components designed to withstand various weather conditions and provide years of reliable service, ensuring your investment truly grows with your garden.
+                    </p>
+                </div>
+
+                <!-- Water Use Optimization Card -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">🔄</div>
+                    <h3 class="text-3xl font-semibold text-tertiary-brown mb-4">Water Use Optimization</h3>
+                    <img src="p2.webp" alt="Smart Water Meter" class="rounded-lg shadow-md mb-4 w-full h-auto">
+                    <p class="text-gray-700 leading-relaxed">
+                        In an era where water conservation is paramount, Gross Irrigation specializes in transforming outdated, inefficient irrigation systems into modern, water-saving powerhouses. Many older systems are prone to leaks, uneven distribution, and lack the intelligence to respond to real-time environmental conditions, leading to significant water wastage. Our optimization services begin with a comprehensive audit of your existing setup, identifying areas of inefficiency and recommending targeted upgrades. We focus on converting conventional, high-consumption systems to more efficient drip or micro-sprinkler technologies, which deliver water directly to the plant root zone, minimizing evaporation and runoff. A cornerstone of our optimization strategy is the installation of smart meters. These intelligent devices provide you with daily, granular insights into your water consumption, allowing you to monitor usage patterns, identify anomalies, and make informed adjustments. Coupled with this, our advanced leak detection and auto shutoff technology act as a vigilant guardian for your garden. Should a leak occur, the system immediately detects it and automatically shuts off the water supply, preventing costly damage and substantial water loss. This proactive approach not only safeguards your property but also contributes significantly to reducing your environmental footprint and lowering your utility bills. We empower you with the data and technology needed to become a truly responsible water steward, ensuring your garden thrives without unnecessary consumption.
+                    </p>
+                </div>
+
+                <!-- Rainwater System Integration Card -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">🌧️</div>
+                    <h3 class="text-3xl font-semibold text-tertiary-brown mb-4">Rainwater System Integration</h3>
+                    <img src="p3.avif" alt="Rainwater Harvesting System" class="rounded-lg shadow-md mb-4 w-full h-auto">
+                    <p class="text-gray-700 leading-relaxed">
+                        Embrace true sustainability with Gross Irrigation's rainwater system integration services. We help you leverage nature's most abundant resource by seamlessly connecting your irrigation system with rooftop rainwater harvesting tanks. This not only provides a free, natural source of water for your garden but also reduces your reliance on municipal water supplies, contributing to significant cost savings and environmental benefits. Our experts design and implement systems that efficiently collect, filter, and store rainwater, ensuring it's clean and ready for irrigation. We consider factors like roof size, rainfall patterns, and garden water demand to size the collection and storage components appropriately, maximizing your water independence. Furthermore, we offer greywater reuse compatibility, allowing you to repurpose water from sinks, showers, and laundry for non-potable uses like garden irrigation. This advanced integration significantly reduces your household's overall water footprint. Our systems are designed with robust overflow and backup safety setups, ensuring that in periods of heavy rainfall, excess water is safely diverted, preventing any damage to your property. In times of drought or low rainfall, our smart systems can automatically switch to a backup water source (like municipal supply), ensuring your garden never goes thirsty. By integrating these natural and recycled water sources, Gross Irrigation provides a holistic, eco-conscious approach to garden hydration that is both efficient and resilient.
+                    </p>
+                </div>
+
+                <!-- Zone-Based Irrigation Planning Card -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">🗺️</div>
+                    <h3 class="text-3xl font-semibold text-tertiary-brown mb-4">Zone-Based Irrigation Planning</h3>
+                    <img src="p4.avif" alt="Garden Zone Map" class="rounded-lg shadow-md mb-4 w-full h-auto">
+                    <p class="text-gray-700 leading-relaxed">
+                        Effective irrigation is not a one-size-fits-all solution. Gross Irrigation excels in creating sophisticated zone-based irrigation plans that cater to the unique microclimates and plant requirements within your garden. Our planning process begins with a detailed assessment of your landscape, mapping out areas based on sun exposure (full sun, partial shade, deep shade), soil type variations, and existing plant groupings. This meticulous mapping allows us to design distinct irrigation zones, each with its own customized watering schedule and flow rate. For instance, drought-tolerant plants in a sunny, well-drained area will receive less water than moisture-loving plants in a shaded, heavier soil zone. We implement plant-specific flow rates and emitter types to ensure that every plant receives its ideal amount of water, preventing both underwatering and overwatering, which are common causes of plant stress and disease. Our systems allow for custom programming by season, automatically adjusting watering durations and frequencies as temperatures change and plants enter different growth cycles. This dynamic approach ensures that your garden thrives year-round, conserving water during cooler months and providing adequate hydration during peak growing seasons. Zone-based planning not only optimizes plant health and vitality but also significantly enhances water efficiency by eliminating wasteful watering of areas that don't need it. It's a smart, scientific approach to garden care that delivers measurable results and a more resilient landscape.
+                    </p>
+                </div>
+
+                <!-- Maintenance Plans Card -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">🔧</div>
+                    <h3 class="text-3xl font-semibold text-tertiary-brown mb-4">Maintenance Plans</h3>
+                    <img src="p5.avif" alt="Irrigation System Maintenance" class="rounded-lg shadow-md mb-4 w-full h-auto">
+                    <p class="text-gray-700 leading-relaxed">
+                        An irrigation system is an investment, and like any investment, it requires regular care to ensure its longevity and peak performance. Gross Irrigation offers comprehensive maintenance plans designed to keep your system running flawlessly and efficiently year after year. Our quarterly visits are a cornerstone of this service, where our certified technicians conduct thorough inspections of all components, including pipes, emitters, sprinklers, valves, and controllers. During these visits, we check for leaks, clogs, damaged parts, and ensure that all sensors and smart features are functioning correctly. We also make necessary adjustments to sprinkler heads and drip lines to account for plant growth and seasonal changes, ensuring optimal water delivery. Beyond routine checks, our maintenance plans include prompt emergency support within 24 hours. Should any unexpected issue arise – a burst pipe, a malfunctioning controller, or a sudden leak – our rapid response team is on standby to diagnose and rectify the problem swiftly, minimizing potential water loss or damage to your landscape. We also offer a no-hassle parts replacement policy for components covered under your plan, ensuring that any necessary repairs are carried out using high-quality, genuine parts without additional hidden costs. With a Gross Irrigation maintenance plan, you gain peace of mind knowing that your smart irrigation system is always in expert hands, delivering consistent performance and maximizing your water savings without any effort on your part.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Features Section -->
+    <section id="tools-features" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-12 text-primary-green">Smart Tools & Features: Empowering Your Green Thumb</h2>
+            <p class="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+                Gross Irrigation provides a suite of intuitive tools and intelligent features designed to put you in control of your garden's hydration. These innovations simplify management, provide valuable insights, and ensure your system operates with maximum efficiency, making smart gardening accessible to everyone.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Irrigation Cost Calculator -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">💵</div>
+                    <h3 class="text-2xl font-semibold text-tertiary-brown mb-4">Irrigation Cost Calculator</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Curious about the financial benefits of a smart irrigation system? Our intuitive Irrigation Cost Calculator allows you to estimate your potential monthly savings and calculate the return on investment (ROI) over time. Simply input a few details about your current water usage, garden size, and local water rates, and the calculator will provide a clear projection of how much you can save by switching to a Gross Irrigation system. This tool empowers you to make an informed decision, highlighting the long-term economic advantages of water-efficient technology. It's not just about saving water; it's about saving money too, making sustainable living more affordable and attractive.
+                    </p>
+                </div>
+
+                <!-- Mobile App Dashboard -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">📱</div>
+                    <h3 class="text-2xl font-semibold text-tertiary-brown mb-4">Mobile App Dashboard</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Manage your entire irrigation system from the palm of your hand with our comprehensive Mobile App Dashboard. This user-friendly interface provides live water data, allowing you to see exactly how much water your garden is consuming in real-time. Access detailed usage reports that break down consumption by zone, time of day, and even plant type, giving you unprecedented insights into your watering habits. The app also enables remote control of your system, allowing you to start, stop, or pause watering cycles from anywhere in the world. Set custom schedules, receive real-time alerts for leaks or system anomalies, and monitor your garden's health with ease. It's the ultimate tool for convenience, control, and peace of mind.
+                    </p>
+                </div>
+
+                <!-- Rain Delay Mode -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">🌧️</div>
+                    <h3 class="text-2xl font-semibold text-tertiary-brown mb-4">Rain Delay Mode</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Never overwater your garden again with our intelligent Rain Delay Mode. This feature automatically pauses your irrigation system during rain forecasts, preventing unnecessary watering and conserving precious resources. Our system integrates with local weather data, proactively adjusting your watering schedule based on predicted rainfall. You can also manually activate the rain delay for a specified period if unexpected precipitation occurs. This smart functionality ensures that your plants receive optimal hydration without being waterlogged, promoting healthier root systems and preventing nutrient runoff. It's an essential feature for maximizing water efficiency and adapting your irrigation to nature's unpredictable patterns.
+                    </p>
+                </div>
+
+                <!-- Smart Timer Wizard -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">⏱️</div>
+                    <h3 class="text-2xl font-semibold text-tertiary-brown mb-4">Smart Timer Wizard</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Setting up your irrigation schedule has never been easier thanks to our intuitive Smart Timer Wizard. This guided tool walks you through the process of creating efficient watering schedules based on your specific plant types, soil conditions, and local climate. Whether you have drought-tolerant succulents or water-loving ferns, the wizard helps you define precise watering durations and frequencies for each zone. It offers pre-set programs for common garden types, which you can then customize to your exact preferences. The Smart Timer Wizard takes the guesswork out of irrigation, ensuring your garden receives the right amount of water at the right time, every time, leading to healthier plants and significant water savings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-12 text-primary-green">Gallery: Our Green Successes</h2>
+            <p class="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+                Witness the transformative power of Gross Irrigation through our gallery of real-life projects. From compact urban balconies to expansive landscape designs, our solutions have brought lush vitality and water efficiency to countless spaces. See the dramatic before-and-after transformations and hear directly from homeowners and designers who have partnered with us to achieve their green dreams.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Example Project 1 -->
+                <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-tertiary-brown mb-2">Rooftop Oasis Transformation</h3>
+                        <p class="text-gray-700">"Gross Irrigation turned our barren rooftop into a vibrant, productive garden. The automated system is a game-changer!" - Priya S., Homeowner</p>
+                    </div>
+                </div>
+                <!-- Example Project 2 -->
+                <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-tertiary-brown mb-2">Lush Lawn, Less Water</h3>
+                        <p class="text-gray-700">"Our lawn has never looked better, and our water bill has significantly decreased. Highly recommend their smart solutions." - Rajesh K., Homeowner</p>
+                    </div>
+                </div>
+                <!-- Example Project 3 -->
+                <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-tertiary-brown mb-2">Sustainable Corporate Campus</h3>
+                        <p class="text-gray-700">"As landscape designers, we rely on Gross Irrigation for their innovative and sustainable approaches. Their systems are top-notch." - GreenScape Designs</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-lg text-gray-700 text-center max-w-4xl mx-auto leading-relaxed">
+                These are just a few examples of how Gross Irrigation helps clients achieve their vision of beautiful, sustainable green spaces. We pride ourselves on delivering results that not only enhance aesthetics but also contribute positively to the environment and your budget. Our commitment to excellence is reflected in every project, big or small, ensuring customer satisfaction and long-term success.
+            </p>
+        </div>
+    </section>
+
+    <!-- Educational Hub Section -->
+    <section id="educational-hub" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-12 text-primary-green">Educational Hub: Grow Your Knowledge</h2>
+            <p class="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+                At Gross Irrigation, we believe that informed gardeners are successful gardeners. Our Educational Hub is a rich resource designed to empower you with the knowledge and skills needed to optimize your irrigation system and cultivate thriving green spaces. Explore our curated articles and micro-tutorials to deepen your understanding of water-efficient practices, smart technology, and effective garden management.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Latest Articles -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-3xl font-semibold text-tertiary-brown mb-6">📚 Latest Articles</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <h4 class="text-xl font-semibold text-primary-green mb-2">How to Plan Drip Systems for Terraces: A Step-by-Step Guide</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Terrace gardens present unique irrigation challenges due to limited space, varied plant types, and drainage considerations. This comprehensive article delves into the intricacies of designing and implementing efficient drip irrigation systems specifically for elevated spaces. Learn about choosing the right emitters, calculating water pressure, laying out drip lines to maximize coverage, and integrating smart controllers for automated watering. We cover everything from initial planning and material selection to installation best practices and common pitfalls to avoid, ensuring your terrace garden receives precise hydration with minimal waste.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <h4 class="text-xl font-semibold text-primary-green mb-2">Moisture Sensors: Worth the Upgrade? An In-Depth Analysis</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Moisture sensors are often touted as a game-changer in smart irrigation, but are they truly worth the investment? This article provides an unbiased, in-depth analysis of soil moisture sensor technology, exploring how these devices work, their benefits, and potential limitations. Discover how sensors can prevent overwatering, optimize water delivery based on actual plant needs, and integrate seamlessly with your smart irrigation controller. We discuss different types of sensors, their accuracy, installation considerations, and the long-term savings and environmental impact they can offer. Make an informed decision about upgrading your system with this essential technology.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <h4 class="text-xl font-semibold text-primary-green mb-2">How We Helped a School Cut Water Use by 60%: A Case Study</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Read our inspiring case study detailing how Gross Irrigation partnered with a local school to drastically reduce their landscape water consumption by an astounding 60%. This article outlines the challenges faced by the school, our strategic approach to system overhaul, including the implementation of zone-based irrigation, smart controllers, and rainwater harvesting integration. We highlight the measurable results, the positive impact on the school's budget, and the educational benefits for students learning about water conservation. This real-world example demonstrates our commitment to large-scale efficiency and community impact.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <h4 class="text-xl font-semibold text-primary-green mb-2">The Best Sprinklers for Windy Cities: Mitigating Drift and Maximizing Coverage</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Windy conditions can wreak havoc on traditional sprinkler systems, leading to significant water drift, uneven coverage, and wasted resources. This article explores the best sprinkler technologies specifically designed to perform optimally in high-wind environments. Learn about low-angle nozzles, rotating stream sprinklers, and pressure-regulating heads that minimize water loss due to wind. We provide practical tips for system design and installation in windy areas, ensuring your landscape receives consistent and efficient watering, even on blustery days. Protect your investment and conserve water with the right sprinkler choices for challenging climates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Micro Tutorials -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-tertiary-brown mb-6">🎥 Micro Tutorials</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <h4 class="text-xl font-semibold text-primary-green mb-2">5-Min Garden Mapping DIY: Plan Your Zones</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Learn how to quickly map your garden to identify different sun exposure areas, soil types, and plant groupings. This tutorial guides you through a simple, effective process to visually plan your irrigation zones, laying the groundwork for a highly efficient watering system.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <h4 class="text-xl font-semibold text-primary-green mb-2">Install a Sprinkler Timer in 3 Steps: A Quick Guide</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                This concise tutorial provides a straightforward, step-by-step guide to installing a basic sprinkler timer. Perfect for beginners, it covers the essential connections and initial programming to get your automated watering started in just minutes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Gross Irrigation Section -->
+    <section id="why-choose-us" class="py-16 bg-primary-green text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-12">Why Choose Gross Irrigation?</h2>
+            <p class="text-lg mb-12 max-w-4xl mx-auto leading-relaxed">
+                Choosing Gross Irrigation means partnering with a leader in sustainable and smart irrigation solutions. Our commitment to excellence, customer satisfaction, and environmental stewardship sets us apart. Here’s why discerning homeowners and landscape professionals trust us to bring their green spaces to life:
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-accent-blue text-5xl mb-4">✔</div>
+                    <h3 class="text-2xl font-semibold mb-2">1000+ Successful Installations</h3>
+                    <p class="text-gray-200">
+                        Our extensive portfolio boasts over a thousand successful irrigation system installations across diverse landscapes, from compact urban balconies to expansive commercial properties. This track record is a testament to our expertise, reliability, and consistent ability to deliver high-quality, efficient solutions that exceed client expectations. Each project is handled with meticulous attention to detail, ensuring optimal performance and long-term durability.
+                    </p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-accent-blue text-5xl mb-4">✔</div>
+                    <h3 class="text-2xl font-semibold mb-2">Free Consultations Within 48 Hours</h3>
+                    <p class="text-gray-200">
+                        Embark on your journey to a more sustainable garden with a no-obligation, free consultation. Our team is committed to responding to your inquiries and scheduling an on-site visit within 48 hours. During this consultation, we'll assess your specific needs, discuss your vision, and provide expert recommendations tailored to your garden's unique requirements, all without any upfront cost.
+                    </p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-accent-blue text-5xl mb-4">✔</div>
+                    <h3 class="text-2xl font-semibold mb-2">App Support + Real-Time Alerts</h3>
+                    <p class="text-gray-200">
+                        Stay connected and in control with our intuitive mobile app, offering comprehensive support and real-time alerts. Monitor your system's performance, adjust schedules, and receive instant notifications for any anomalies like leaks or low pressure. Our dedicated app support ensures you have all the resources and assistance you need at your fingertips, empowering you to manage your irrigation effortlessly.
+                    </p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-accent-blue text-5xl mb-4">✔</div>
+                    <h3 class="text-2xl font-semibold mb-2">Eco-Smart Certified Equipment</h3>
+                    <p class="text-gray-200">
+                        We are committed to sustainability, which is why we exclusively utilize Eco-Smart Certified Equipment in all our installations. This ensures that every component of your irrigation system meets the highest standards for water efficiency and environmental responsibility. Our reliance on certified technology guarantees optimal performance while minimizing your ecological footprint.
+                    </p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-accent-blue text-5xl mb-4">✔</div>
+                    <h3 class="text-2xl font-semibold mb-2">Custom Plans for Any Size Garden</h3>
+                    <p class="text-gray-200">
+                        Whether you have a compact balcony garden, a sprawling residential lawn, or a complex commercial landscape, Gross Irrigation develops custom irrigation plans tailored to your specific needs. Our flexible and scalable solutions ensure that every green space, regardless of its size or complexity, receives the precise hydration it requires for optimal health and growth.
+                    </p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-accent-blue text-5xl mb-4">✔</div>
+                    <h3 class="text-2xl font-semibold mb-2">Dedicated Post-Installation Support</h3>
+                    <p class="text-gray-200">
+                        Our commitment to your garden's success extends far beyond installation. We provide dedicated post-installation support, including comprehensive training on your new system, troubleshooting assistance, and access to our expert technicians for any questions or concerns that may arise. Your satisfaction and the thriving health of your garden are our top priorities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons & Smart Features Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center mb-12 text-primary-green">Add-ons & Smart Features: Elevate Your Gardening Experience</h2>
+            <p class="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
+                Gross Irrigation continually innovates to bring you the most advanced and convenient features for smart garden management. These add-ons are designed to enhance your control, provide cutting-edge insights, and offer unparalleled peace of mind.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- WhatsApp-Based System Support Bot -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">💬</div>
+                    <h3 class="text-2xl font-semibold text-tertiary-brown mb-4">WhatsApp-Based System Support Bot</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Get instant answers and quick support for your irrigation system through our convenient WhatsApp-based support bot. This intelligent assistant can help you troubleshoot minor issues, provide basic system status updates, and even guide you through common adjustments. It's a fast, accessible way to get the help you need, right when you need it, minimizing downtime and maximizing your system's efficiency. For more complex issues, the bot can seamlessly connect you to a live support agent, ensuring comprehensive assistance.
+                    </p>
+                </div>
+
+                <!-- AR-Based Garden Planner (beta) -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">✨</div>
+                    <h3 class="text-2xl font-semibold text-tertiary-brown mb-4">AR-Based Garden Planner (beta)</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Visualize your dream garden before it even exists with our cutting-edge AR-Based Garden Planner (currently in beta). This augmented reality tool allows you to overlay virtual irrigation components, plant layouts, and water flow simulations directly onto your real-world garden space using your smartphone or tablet. Experiment with different designs, see how water will be distributed, and make informed decisions about your landscape plan with unprecedented clarity. It's an innovative way to design, plan, and optimize your garden's irrigation with an immersive, interactive experience.
+                    </p>
+                </div>
+
+                <!-- “Grow Smart Guarantee” – 1-year warranty on all setups -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">🏆</div>
+                    <h3 class="text-2xl font-semibold text-tertiary-brown mb-4">“Grow Smart Guarantee” – 1-Year Warranty</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We stand behind the quality and durability of our installations with the "Grow Smart Guarantee," a comprehensive 1-year warranty on all setups. This warranty covers any defects in materials or workmanship, providing you with complete peace of mind. In the unlikely event of an issue, our team will promptly address and rectify it, ensuring your system operates flawlessly. Our commitment to quality means you can invest in Gross Irrigation with confidence, knowing your green space is protected.
+                    </p>
+                </div>
+
+                <!-- Referral Rewards – Earn ₹ discounts by sharing -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="text-accent-blue text-5xl mb-4">🤝</div>
+                    <h3 class="text-2xl font-semibold text-tertiary-brown mb-4">Referral Rewards – Earn ₹ Discounts</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Share the benefits of smart irrigation with your friends and family and earn exciting referral rewards! Our program allows you to receive exclusive ₹ discounts on future services or products for every successful referral that leads to a new installation. It's our way of saying thank you for spreading the word about Gross Irrigation and helping more people achieve water-efficient, thriving gardens. Join our community of satisfied customers and start earning rewards today!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section id="customer-satisfaction" class="py-16 bg-primary-green text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-12">Customer Satisfaction: Our Driving Force</h2>
+            <p class="text-lg mb-12 max-w-4xl mx-auto leading-relaxed">
+                At Gross Irrigation, customer satisfaction isn't just a goal; it's the foundation of everything we do. We are immensely proud of the relationships we build and the positive impact our solutions have on our clients' lives and their green spaces. Our dedication to excellence, transparent communication, and unparalleled support ensures that every customer experience is seamless and rewarding. Here’s what some of our valued clients have to say about their journey with Gross Irrigation:
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg">
+                    <p class="italic text-gray-200 text-lg mb-4">"Gross Irrigation transformed my small balcony into a lush, vibrant haven. The automated drip system is incredibly efficient, and I've noticed a significant drop in my water bill. Their team was professional, knowledgeable, and completed the installation quickly. I couldn't be happier with the results and the ongoing support!"</p>
+                    <p class="font-semibold text-accent-blue">- Anjali Sharma, Homeowner, Mumbai</p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg">
+                    <p class="italic text-gray-200 text-lg mb-4">"As a landscape architect, I constantly seek innovative and sustainable solutions for my projects. Gross Irrigation's smart systems are a perfect fit. Their zone-based planning and rainwater integration capabilities are unmatched. My clients are thrilled with the water savings and the health of their landscapes. A truly reliable partner!"</p>
+                    <p class="font-semibold text-accent-blue">- Rohan Mehta, Landscape Architect, Bengaluru</p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg">
+                    <p class="italic text-gray-200 text-lg mb-4">"Managing a rooftop farm requires precision watering, and Gross Irrigation delivered exactly that. Their app-controlled system gives me real-time data and allows me to adjust watering based on crop needs and weather. The maintenance plan ensures everything runs smoothly. They are an essential part of our farm's success."</p>
+                    <p class="font-semibold text-accent-blue">- Deepak Kumar, Rooftop Farmer, Delhi</p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg">
+                    <p class="italic text-gray-200 text-lg mb-4">"The team at Gross Irrigation made the conversion of our old, leaky system so easy. The new smart meters immediately showed us where we were wasting water, and the auto shutoff feature has saved us from potential damage. Their commitment to water efficiency is truly commendable."</p>
+                    <p class="font-semibold text-accent-blue">- Sarah Khan, Property Manager, Chennai</p>
+                </div>
+                <div class="bg-green-800 p-8 rounded-xl shadow-lg">
+                    <p class="italic text-gray-200 text-lg mb-4">"From the initial free audit to the final installation, Gross Irrigation provided exceptional service. They designed a custom plan for my complex garden, accommodating different plant types and sun exposures. My garden has never looked healthier, and I feel good knowing I'm conserving water."</p>
+                    <p class="font-semibold text-accent-blue">- Vijay Patil, Avid Gardener, Pune</p>
+                </div>
+            </div>
+            <p class="text-lg mt-12 max-w-4xl mx-auto leading-relaxed">
+                These testimonials reflect our unwavering commitment to delivering not just irrigation systems, but complete solutions that bring joy and sustainability to our clients' lives. Your satisfaction is our greatest reward, and we continuously strive to exceed expectations with every project.
+            </p>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section id="disclaimer" class="py-16 bg-gray-200 text-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8 text-tertiary-brown">Disclaimer</h2>
+            <div class="prose max-w-none mx-auto text-justify text-base leading-relaxed">
+                <p>
+                    The information provided on this website by Gross Irrigation ("we," "us," or "our") is for general informational purposes only. While we strive to keep the information accurate and up-to-date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                </p>
+                <p>
+                    In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website. Through this website, you may be able to link to other websites which are not under the control of Gross Irrigation. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
+                </p>
+                <p>
+                    Every effort is made to keep the website up and running smoothly. However, Gross Irrigation takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control. The content on this website, including text, graphics, images, and information, is provided for general information purposes only and does not constitute professional advice. You should not rely on the information on this website as an alternative to advice from a qualified professional. If you have any specific questions about any matter, you should consult a professional.
+                </p>
+                <p>
+                    The testimonials and success stories presented on this website are based on actual experiences of our clients and represent their individual results. These results are not necessarily typical and may not reflect the experience of other clients. Individual results may vary based on a variety of factors, including but not limited to, specific garden conditions, climate, maintenance practices, and adherence to recommended guidelines. We do not guarantee that you will achieve the same or similar results.
+                </p>
+                <p>
+                    Any cost savings or ROI estimations provided by our Irrigation Cost Calculator or mentioned elsewhere on the site are illustrative and based on generalized assumptions. Actual savings and returns may vary significantly depending on individual circumstances, local water rates, existing system inefficiencies, and specific usage patterns. These estimates should not be considered as guaranteed financial outcomes.
+                </p>
+                <p>
+                    Gross Irrigation reserves the right to modify, update, or remove any content on this website at any time without prior notice. We also reserve the right to revise these terms and conditions at any time by updating this posting. You should visit this page periodically to review the then-current terms and conditions because they are binding on you.
+                </p>
+                <p>
+                    While we strive to ensure the security of our website, we cannot guarantee that the site will be free from viruses or other harmful components. It is your responsibility to ensure that your computer system is adequately protected. Gross Irrigation shall not be liable for any damages to, or viruses that may infect, your computer equipment or other property on account of your access to, use of, or browsing in the site or your downloading of any materials, data, text, images, video, or audio from the site.
+                </p>
+                <p>
+                    The use of our services is subject to a separate service agreement, which outlines the specific terms, conditions, warranties, and liabilities related to the installation, maintenance, and operation of your irrigation system. This website's content does not supersede or modify the terms of any such service agreement. For detailed information regarding our services and contractual obligations, please refer to your specific service agreement or contact us directly.
+                </p>
+                <p>
+                    By using this website, you signify your acceptance of this disclaimer. If you do not agree to this disclaimer, please do not use our website. Your continued use of the website following the posting of changes to this disclaimer will be deemed your acceptance of those changes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-tertiary-brown text-white p-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
+            <div class="flex-1">
+                <h3 class="text-2xl font-bold mb-4">Gross Irrigation</h3>
+                <p class="text-gray-200 mb-2">"The Flow That Grows."</p>
+                <p class="text-gray-200">Your partner in sustainable and smart irrigation.</p>
+            </div>
+
+            <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-200">123 Green Oasis Lane,</p>
+                <p class="text-gray-200">Eco-City, Garden District 78901,</p>
+                <p class="text-200">India</p>
+                <p class="text-gray-200 mt-2">Email: info@grossirrigation.com</p>
+                <p class="text-gray-200">Phone: +91 98765 43210</p>
+            </div>
+
+            <div class="flex-1">
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-accent-blue transition-colors">Home</a></li>
+                    <li><a href="privacy.html" class="hover:text-accent-blue transition-colors">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-accent-blue transition-colors">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="hover:text-accent-blue transition-colors">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-blue transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-gray-400 mt-8 pt-8 border-t border-gray-700">
+            &copy; 2025 Gross Irrigation. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
